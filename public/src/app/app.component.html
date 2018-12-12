@@ -1,0 +1,68 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    .box{
+      display: inline-block;
+      border: 1px solid black;
+      width: 250px;
+    }
+
+    h1, button{
+      text-align: center; 
+    }
+
+    .activity{
+      height: 250px;
+      width: 1000px;
+      border: 1px solid green;
+    }
+
+  </style>
+  
+</head>
+<body>
+  
+  <h3>
+    Total Gold {{ gold }}!
+  </h3>
+  
+  <div class="Class" style="padding:20px; display:inline-block; vertical-align: top;">
+  
+  <div class="box">
+    <h1>Farm</h1>
+    <button (click)="onClick('Farm')"> Farm! </button>
+  </div>
+  
+  <div class="box">
+    <h1>Cave</h1>
+    <button (click)="onClick('Cave')"> Cave! </button>
+  </div>
+  
+  <div class="box">
+    <h1>House</h1>
+    <button (click)="onClick('House')"> House! </button>
+  </div>
+  
+  <div class="box">
+    <h1>Casino</h1>
+    <button (click)="onClick('Casino')"> Casino! </button>
+  </div>
+
+
+  <div class="activity">
+    <h1>Activity</h1>
+     <p>{{log}}</p>
+  </div>
+   
+  </div> 
+</body>
+</html>
+
+
